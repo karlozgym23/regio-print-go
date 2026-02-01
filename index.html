@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Imprenta Premium en Monterrey | Doctores y Negocios - Regio Print Go</title>
+    <meta name="description"
+        content="Recetarios médicos seguros, tarjetas de presentación y papelería para consultorios en San Pedro y Monterrey. Entrega a domicilio." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://regioprintgo.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Regio Print Go | Imprenta Premium en Monterrey" />
+    <meta property="og:description"
+        content="Recetarios médicos, tarjetas premium y gran formato. Cotiza por WhatsApp." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://regioprintgo.com/" />
+    <meta property="og:image" content="https://regioprintgo.com/img/og.jpg" />
+
+    <!-- SEO Local Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PrintShop",
+      "name": "Regio Print Go",
+      "image": "https://regioprintgo.com/img/og.jpg",
+      "telephone": "+528115343073",
+      "url": "https://regioprintgo.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Monterrey",
+        "addressRegion": "NL",
+        "addressCountry": "MX"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#0B1E33',
+                        'brand-blue': '#163A5F',
+                        'brand-lime': '#B4D645',
+                        'brand-light': '#F8FAFC',
+                    },
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    boxShadow: {
+                        'glow': '0 0 20px rgba(180, 214, 69, 0.3)',
+                        'card': '0 10px 30px -5px rgba(0, 0, 0, 0.08)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        section {
+            scroll-margin-top: 80px;
+        }
+
+        .header-scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .header-transparent {
+            background: transparent;
+            padding: 1.5rem 0;
+        }
+
+        /* WhatsApp pulse */
+        .whatsapp-pulse {
+            animation: pulse-green 2s infinite;
+        }
+
+        @keyframes pulse-green {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Animaciones hover */
+        .hover-glow:hover {
+            box-shadow: 0 0 25px rgba(180, 214, 69, 0.4);
+            transform: translateY(-3px);
+        }
+
+        /* UX Formulario */
+        input:focus,
+        select:focus,
+        textarea:focus {
+            box-shadow: 0 0 0 2px #B4D645, 0 0 15px rgba(180, 214, 69, 0.3) !important;
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            border-color: #B4D645 !important;
+        }
+
+        .process-step {
+            position: relative;
+        }
+
+        .process-step::after {
+            content: '';
+            position: absolute;
+            top: 2rem;
+            right: -50%;
+            width: 100%;
+            height: 2px;
+            background: repeating-linear-gradient(90deg, #B4D645 0, #B4D645 6px, transparent 6px, transparent 12px);
+            z-index: 0;
+            display: none;
+        }
+
+        @media(min-width: 768px) {
+            .process-step:not(:last-child)::after {
+                display: block;
+            }
+        }
+
+        /* Mockups */
+        .mockup-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .group:hover .mockup-img {
+            transform: scale(1.05);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .whatsapp-pulse {
+                animation: none !important;
+            }
+
+            * {
+                scroll-behavior: auto !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-brand-light text-slate-800 antialiased">
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/528115343073?text=Hola%2C%20vi%20su%20web%20y%20quiero%20cotizar." target="_blank"
+        class="fixed bottom-24 lg:bottom-8 right-6 z-50 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-xl hover:scale-110 transition whatsapp-pulse"
+        aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header id="navbar" class="fixed w-full top-0 z-40 transition-all duration-300 header-transparent">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-extrabold text-white transition-colors flex items-center gap-2"
+                id="nav-logo">
+                REGIO PRINT <span class="text-brand-lime">GO</span>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-bold" aria-label="Navegación principal">
+                <a href="#hero" class="text-gray-300 hover:text-brand-lime transition nav-link">Inicio</a>
+                <a href="#ventajas" class="text-gray-300 hover:text-brand-lime transition nav-link">Ventajas</a>
+                <a href="#productos" class="text-gray-300 hover:text-brand-lime transition nav-link">Productos</a>
+                <a href="#area-medica" class="text-gray-300 hover:text-brand-lime transition nav-link">Área Médica</a>
+                <a href="#proceso" class="text-gray-300 hover:text-brand-lime transition nav-link">Proceso</a>
+                <a href="#faq" class="text-gray-300 hover:text-brand-lime transition nav-link">FAQ</a>
+                <a href="#cuestionario"
+                    class="px-6 py-2 bg-brand-lime text-brand-dark rounded-full hover:shadow-glow transition transform hover:-translate-y-0.5 font-extrabold">
+                    Cotizar
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-white text-2xl" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-brand-dark/95 backdrop-blur-xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center gap-8 lg:hidden">
+        <button id="close-menu-btn" class="absolute top-8 right-8 text-white text-3xl hover:text-brand-lime">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#hero" class="mobile-link text-2xl font-bold text-white hover:text-brand-lime transition">Inicio</a>
+        <a href="#ventajas"
+            class="mobile-link text-2xl font-bold text-white hover:text-brand-lime transition">Ventajas</a>
+        <a href="#productos"
+            class="mobile-link text-2xl font-bold text-white hover:text-brand-lime transition">Productos</a>
+        <a href="#area-medica" class="mobile-link text-2xl font-bold text-white hover:text-brand-lime transition">Área
+            Médica</a>
+        <a href="#proceso"
+            class="mobile-link text-2xl font-bold text-white hover:text-brand-lime transition">Proceso</a>
+        <a href="#cuestionario"
+            class="mobile-link px-8 py-4 bg-brand-lime text-brand-dark font-black rounded-full text-xl">
+            Cotizar Ahora
+        </a>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <section id="hero" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-brand-dark overflow-hidden">
+            <div class="absolute top-0 right-0 w-2/3 h-full bg-brand-blue/30 blur-[100px] rounded-full"></div>
+
+            <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/10 mb-6 backdrop-blur-sm">
+                        <span class="w-2 h-2 rounded-full bg-brand-lime animate-pulse"></span>
+                        <span class="text-white text-xs font-bold uppercase tracking-wide">Imprenta profesional en
+                            Monterrey</span>
+                    </div>
+
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-6" data-aos="fade-right">
+                        Imprime lo que tu <span class="text-brand-lime">negocio</span> necesita, <span
+                            class="text-brand-lime">cuando lo necesita</span>.
+                    </h1>
+
+                    <p class="text-xl text-gray-400 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed font-light"
+                        data-aos="fade-right" data-aos-delay="100">
+                        Lonas, viniles, rotulación y papelería comercial con procesos claros, calidad constante y
+                        atención directa por WhatsApp.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center">
+                        <a href="#cuestionario"
+                            class="px-8 py-4 bg-brand-lime text-brand-dark font-bold rounded-full hover:shadow-glow transition hover:-translate-y-1"
+                            data-aos="fade-up" data-aos-delay="200">
+                            Cotizar impresión
+                        </a>
+                        <a href="#productos"
+                            class="text-gray-400 hover:text-white font-medium border-b border-transparent hover:border-brand-lime transition pb-1"
+                            data-aos="fade-up" data-aos-delay="300">
+                            Ver soluciones por área
+                        </a>
+                    </div>
+
+
+
+                    <div class="mt-10 pt-8 border-t border-white/10 flex justify-center lg:justify-start gap-8 text-gray-400 text-sm font-semibold"
+                        data-aos="fade-in" data-aos-delay="400">
+                        <div class="flex items-center gap-2"><i class="fas fa-shield-alt text-brand-lime"></i> Confianza
+                            Garantizada
+                        </div>
+                        <div class="flex items-center gap-2"><i class="fas fa-truck text-brand-lime"></i> Envíos en todo
+                            Monterrey
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:block relative perspective-1000" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="img/hero_bg.png"
+                        class="rounded-3xl shadow-2xl rotate-y-12 hover:rotate-0 transition duration-700 border border-white/10 transform hover:scale-[1.02]"
+                        alt="Muestrario Impresión">
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce hover:animate-none"
+                        data-aos="zoom-in" data-aos-delay="500">
+                        <div class="bg-brand-lime/20 p-3 rounded-xl text-brand-dark"><i
+                                class="fas fa-check-circle text-xl"></i></div>
+                        <div>
+                            <p class="text-xs text-gray-500 font-bold uppercase">Satisfacción</p>
+                            <p class="text-brand-dark font-black">Garantizada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VENTAJAS (Fusionado) -->
+        <section id="ventajas" class="py-20 bg-white relative">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="text-brand-lime font-bold tracking-wider text-xs uppercase">¿Por qué nosotros?</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-brand-dark mt-2">Confianza que se Imprime</h2>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div
+                        class="bg-brand-light p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition group text-center">
+                        <div
+                            class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-2xl text-brand-lime shadow-sm mb-4 group-hover:scale-110 transition">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">Calidad Controlada</h3>
+                        <p class="text-sm text-gray-500">Materiales y acabados premium.</p>
+                    </div>
+                    <div
+                        class="bg-brand-light p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition group text-center">
+                        <div
+                            class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-2xl text-brand-blue shadow-sm mb-4 group-hover:scale-110 transition">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">Entregas acordadas</h3>
+                        <p class="text-sm text-gray-500">Sin promesas falsas.</p>
+                    </div>
+                    <div
+                        class="bg-brand-light p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition group text-center">
+                        <div
+                            class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-2xl text-brand-lime shadow-sm mb-4 group-hover:scale-110 transition">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">Trato Directo</h3>
+                        <p class="text-sm text-gray-500">Asesoría personalizada.</p>
+                    </div>
+                    <div
+                        class="bg-brand-light p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition group text-center">
+                        <div
+                            class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-2xl text-brand-blue shadow-sm mb-4 group-hover:scale-110 transition">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-2">Costos Transparentes</h3>
+                        <p class="text-sm text-gray-500">La mejor relación costo-beneficio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS (Grid detallada con estilo A) -->
+        <section id="productos" class="py-24 bg-brand-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-black text-brand-dark">Nuestros Productos</h2>
+                    <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Soluciones de impresión offset y digital para cada
+                        necesidad de tu negocio.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Item 1 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-xl transition group">
+                        <div class="h-48 overflow-hidden relative">
+                            <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-dark/0 transition z-10">
+                            </div>
+                            <img src="img/tarjetas.png" loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                alt="Tarjetas">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-black text-brand-dark mb-2">Tarjetas de Presentación</h3>
+                            <p class="text-sm text-gray-500 mb-6">Tu mejor carta de presentación. Acabados mate,
+                                brillante o soft-touch.</p>
+                            <a href="#cuestionario"
+                                class="font-bold text-brand-lime hover:text-brand-blue transition flex items-center gap-2">
+                                Cotizar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-xl transition group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="img/volantes.png" loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                alt="Volantes">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-black text-brand-dark mb-2">Volantes y Folletos</h3>
+                            <p class="text-sm text-gray-500 mb-6">Difunde tu mensaje masivamente. Ideal para promociones
+                                y eventos.</p>
+                            <a href="#cuestionario"
+                                class="font-bold text-brand-lime hover:text-brand-blue transition flex items-center gap-2">
+                                Cotizar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-xl transition group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="img/lonas.png" loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                alt="Lonas">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-black text-brand-dark mb-2">Lonas y Viniles</h3>
+                            <p class="text-sm text-gray-500 mb-6">Publicidad de gran impacto visual. Resistentes a
+                                exteriores.</p>
+                            <a href="#cuestionario"
+                                class="font-bold text-brand-lime hover:text-brand-blue transition flex items-center gap-2">
+                                Cotizar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-xl transition group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="img/etiquetas.png" loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                alt="Etiquetas">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-black text-brand-dark mb-2">Etiquetas Adhesivas</h3>
+                            <p class="text-sm text-gray-500 mb-6">Personaliza tus productos y empaques con alta calidad.
+                            </p>
+                            <a href="#cuestionario"
+                                class="font-bold text-brand-lime hover:text-brand-blue transition flex items-center gap-2">
+                                Cotizar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-xl transition group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="img/recetarios.png" loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                alt="Recetarios">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-black text-brand-dark mb-2">Recetarios Médicos</h3>
+                            <p class="text-sm text-gray-500 mb-6">Seguridad y profesionalismo. Folios y candados
+                                opcionales.</p>
+                            <a href="#area-medica"
+                                class="font-bold text-brand-lime hover:text-brand-blue transition flex items-center gap-2">
+                                Ver Detalles Médicos <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div
+                        class="bg-brand-dark rounded-3xl overflow-hidden shadow-xl flex flex-col items-center justify-center p-8 text-center border-2 border-brand-lime/20 group hover:border-brand-lime transition">
+                        <div
+                            class="w-20 h-20 bg-brand-lime/10 rounded-full flex items-center justify-center text-3xl text-brand-lime mb-6 group-hover:scale-110 transition">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-2">¿Otro Proyecto?</h3>
+                        <p class="text-sm text-gray-400 mb-8">Invitaciones, Revistas, Carpetas...</p>
+                        <a href="#cuestionario"
+                            class="px-8 py-3 bg-brand-lime text-brand-dark font-black rounded-full hover:shadow-glow transition w-full">
+                            Cotizar Personalizado
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ÁREA MÉDICA (Diseño A manteniéndose) -->
+        <section id="area-medica" class="py-24 bg-white relative overflow-hidden">
+            <!-- Background Blobs -->
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-lime/10 blur-[100px] rounded-full"></div>
+            <div
+                class="absolute bottom-0 left-0 w-full h-1/2 bg-brand-light -skew-y-3 transform origin-bottom-left -z-10">
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-brand-blue text-xs font-black uppercase tracking-wider mb-6">
+                        <i class="fa-solid fa-user-doctor"></i> Especialistas en Salud
+                    </div>
+
+                    <h2 class="text-4xl md:text-5xl font-black text-brand-dark leading-tight mb-6">
+                        Papelería y <span class="text-brand-blue">Control</span> para Consultorios.
+                    </h2>
+
+                    <p class="text-lg text-gray-600 leading-relaxed max-w-xl mb-8">
+                        Recetarios y papelería para consultorios que requieren orden, claridad y una presentación
+                        profesional.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 mb-10">
+                        <!-- Beneficio 1 -->
+                        <div
+                            class="p-5 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition">
+                            <i class="fas fa-list-check text-brand-lime text-2xl mb-3"></i>
+                            <h4 class="font-bold text-brand-dark mb-1">Orden y Control</h4>
+                            <p class="text-xs text-gray-500">Folios consecutivos y formatos claros.</p>
+                        </div>
+                        <!-- Beneficio 2 -->
+                        <div
+                            class="p-5 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition">
+                            <i class="fas fa-certificate text-brand-blue text-2xl mb-3"></i>
+                            <h4 class="font-bold text-brand-dark mb-1">Papel Clínico</h4>
+                            <p class="text-xs text-gray-500">Blancura superior y tacto premium.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative" data-aos="fade-left">
+                    <!-- Kit Card -->
+                    <div
+                        class="bg-brand-dark rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden shadow-2xl border border-white/10">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-lime/20 blur-[80px] rounded-full"></div>
+
+                        <span
+                            class="bg-brand-lime text-brand-dark text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">Solución
+                            Integral</span>
+
+                        <h3 class="text-3xl font-black mb-2">Kit Consultorio</h3>
+                        <p class="text-gray-400 mb-8 text-sm">Lo necesario para operar con imagen profesional.</p>
+
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-brand-lime mt-1"></i>
+                                <span class="text-gray-200"><strong class="text-white">Recetarios</strong> con
+                                    folio</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-brand-lime mt-1"></i>
+                                <span class="text-gray-200"><strong class="text-white">Tarjetas</strong> de
+                                    presentación</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-brand-lime mt-1"></i>
+                                <span class="text-gray-200">Hoja membretada / Expedientes</span>
+                            </li>
+                        </ul>
+
+                        <a href="#cuestionario"
+                            class="block w-full text-center py-4 bg-brand-lime text-brand-dark font-black rounded-xl hover:bg-white transition transform hover:scale-[1.02]">
+                            Cotizar este Paquete <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESO (Simplificado) -->
+        <section id="proceso" class="py-24 bg-brand-dark text-white relative overflow-hidden">
+            <div
+                class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5">
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl lg:text-4xl font-black">Tu pedido en 3 pasos</h2>
+                    <p class="text-gray-400 mt-4">Sin complicaciones.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Paso 1 -->
+                    <div
+                        class="bg-white/5 border border-white/5 p-8 rounded-3xl hover:bg-white/10 transition group relative">
+                        <span
+                            class="text-6xl font-black text-white/5 group-hover:text-brand-lime/20 transition absolute top-4 right-6">01</span>
+                        <div
+                            class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-xl text-white mb-6 relative z-10">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 relative z-10">Cotización</h3>
+                        <p class="text-gray-400 text-sm relative z-10">Envía tus requerimientos.</p>
+                    </div>
+
+                    <!-- Paso 2 -->
+                    <div
+                        class="bg-white/5 border border-white/5 p-8 rounded-3xl hover:bg-white/10 transition group relative">
+                        <span
+                            class="text-6xl font-black text-white/5 group-hover:text-brand-blue/20 transition absolute top-4 right-6">02</span>
+                        <div
+                            class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-xl text-white mb-6 relative z-10">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 relative z-10">Producción</h3>
+                        <p class="text-gray-400 text-sm relative z-10">Confirmamos, imprimimos y procesamos.</p>
+                    </div>
+
+                    <!-- Paso 3 -->
+                    <div
+                        class="bg-white/5 border border-white/5 p-8 rounded-3xl hover:bg-white/10 transition group relative">
+                        <span
+                            class="text-6xl font-black text-white/5 group-hover:text-brand-lime/20 transition absolute top-4 right-6">03</span>
+                        <div
+                            class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-xl text-white mb-6 relative z-10">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 relative z-10">Entrega</h3>
+                        <p class="text-gray-400 text-sm relative z-10">Recibes en tu ubicación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA (Grid B visual A) -->
+        <section class="py-20 bg-brand-light">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-end mb-10" data-aos="fade-up">
+                    <h2 class="text-3xl font-black text-brand-dark">Trabajos Recientes</h2>
+                    <a href="https://instagram.com" target="_blank"
+                        class="hidden md:inline text-brand-blue font-bold hover:text-brand-lime transition">Ver más en
+                        Instagram <i class="fab fa-instagram"></i></a>
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <a href="img/tarjetas.png"
+                        class="glightbox group relative overflow-hidden rounded-2xl cursor-pointer block"
+                        data-gallery="portfolio">
+                        <img src="img/tarjetas.png" loading="lazy"
+                            class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700"
+                            alt="Trabajo 1">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Tarjetas Foil <i
+                                    class="fas fa-search-plus ml-1"></i></p>
+                        </div>
+                    </a>
+
+                    <a href="img/galeria_gran_formato.png"
+                        class="glightbox group relative overflow-hidden rounded-2xl cursor-pointer block"
+                        data-gallery="portfolio">
+                        <img src="img/galeria_gran_formato.png" loading="lazy"
+                            class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700"
+                            alt="Trabajo 2">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Gran Formato <i class="fas fa-search-plus ml-1"></i>
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="img/etiquetas.png"
+                        class="glightbox group relative overflow-hidden rounded-2xl cursor-pointer block"
+                        data-gallery="portfolio">
+                        <img src="img/etiquetas.png" loading="lazy"
+                            class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700"
+                            alt="Trabajo 3">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Etiquetas <i class="fas fa-search-plus ml-1"></i>
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="img/recetarios.png"
+                        class="glightbox group relative overflow-hidden rounded-2xl cursor-pointer block"
+                        data-gallery="portfolio">
+                        <img src="img/recetarios.png" loading="lazy"
+                            class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700"
+                            alt="Trabajo 4">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Corporativo <i class="fas fa-search-plus ml-1"></i>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST SIGNALS (Nuevo) -->
+        <section class="py-10 bg-brand-dark border-b border-white/5">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <p class="text-brand-lime font-black text-xl mb-1"><i class="fas fa-user-check"></i></p>
+                        <p class="text-white text-sm font-bold">Atención Personalizada</p>
+                    </div>
+                    <div>
+                        <p class="text-brand-lime font-black text-xl mb-1"><i class="fas fa-print"></i></p>
+                        <p class="text-white text-sm font-bold">Calidad Profesional</p>
+                    </div>
+                    <div>
+                        <p class="text-brand-lime font-black text-xl mb-1"><i class="fas fa-truck-fast"></i></p>
+                        <p class="text-white text-sm font-bold">Entregas Locales</p>
+                    </div>
+                    <div>
+                        <p class="text-brand-lime font-black text-xl mb-1"><i class="fas fa-shield-halved"></i></p>
+                        <p class="text-white text-sm font-bold">Confianza Total</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS (Nuevo) -->
+        <section class="py-20 bg-white border-b border-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="text-brand-lime font-bold tracking-wider text-xs uppercase">Opiniones Reales</span>
+                    <h2 class="text-3xl font-black text-brand-dark mt-2">Lo que dicen nuestros clientes</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonio 1 -->
+                    <div class="bg-brand-light p-8 rounded-3xl relative">
+                        <div class="text-brand-lime text-4xl absolute -top-4 left-8"><i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6 relative z-10 italic">"Tenía miedo de que copiaran mis recetas. Sus
+                            candados de seguridad son excelentes y el diseño se ve muy elegante."</p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark text-sm">Cliente - Consultorio Médico</h4>
+                                <p class="text-xs text-gray-500">San Pedro Garza García</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="bg-brand-light p-8 rounded-3xl relative">
+                        <div class="text-brand-lime text-4xl absolute -top-4 left-8"><i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6 relative z-10 italic">"Nos facilitaron todo el proceso de los
+                            expedientes. El orden y la puntualidad fueron impecables."</p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 bg-brand-dark rounded-full flex items-center justify-center text-white font-bold">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark text-sm">Cliente - Clínica Dental</h4>
+                                <p class="text-xs text-gray-500">Zona Valle</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 3 -->
+                    <div class="bg-brand-light p-8 rounded-3xl relative">
+                        <div class="text-brand-lime text-4xl absolute -top-4 left-8"><i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6 relative z-10 italic">"La calidad de las tarjetas con foil es
+                            impresionante. Definitivamente elevaron la imagen de mi despacho."</p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 bg-brand-lime rounded-full flex items-center justify-center text-brand-dark font-bold">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark text-sm">Cliente - Despacho Arquitectura</h4>
+                                <p class="text-xs text-gray-500">Monterrey Sur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Disclaimer de Testimonios -->
+                <p class="text-center text-xs text-gray-400 mt-8">Opiniones representativas de clientes reales.</p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-14" data-aos="fade-up">
+                    <h2 class="text-3xl font-black text-brand-dark">Preguntas Frecuentes</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <details class="bg-brand-light rounded-2xl p-6 border border-gray-100 group">
+                        <summary
+                            class="font-bold text-brand-dark cursor-pointer flex justify-between items-center list-none">
+                            <span>¿En qué formatos debo enviar mi diseño?</span>
+                            <span class="group-open:rotate-180 transition"><i
+                                    class="fas fa-chevron-down text-brand-lime"></i></span>
+                        </summary>
+                        <p class="mt-4 text-sm text-gray-600 leading-relaxed pl-2 border-l-2 border-brand-lime">
+                            Aceptamos principalmente **PDF** de alta resolución (preferentemente con sangrado y marcas
+                            de corte). También archivos AI, PSD o JPG de alta calidad.
+                        </p>
+                    </details>
+
+                    <details class="bg-brand-light rounded-2xl p-6 border border-gray-100 group">
+                        <summary
+                            class="font-bold text-brand-dark cursor-pointer flex justify-between items-center list-none">
+                            <span>¿Cuánto tiempo tardan en entregar?</span>
+                            <span class="group-open:rotate-180 transition"><i
+                                    class="fas fa-chevron-down text-brand-lime"></i></span>
+                        </summary>
+                        <p class="mt-4 text-sm text-gray-600 leading-relaxed pl-2 border-l-2 border-brand-lime">
+                            Proyectos digitales urgentes: 24-48 horas. Offset (grandes volúmenes): 5-7 días hábiles. Te
+                            confirmaremos la fecha exacta al cotizar.
+                        </p>
+                    </details>
+
+                    <details class="bg-brand-light rounded-2xl p-6 border border-gray-100 group">
+                        <summary
+                            class="font-bold text-brand-dark cursor-pointer flex justify-between items-center list-none">
+                            <span>¿Hacen envíos a domicilio?</span>
+                            <span class="group-open:rotate-180 transition"><i
+                                    class="fas fa-chevron-down text-brand-lime"></i></span>
+                        </summary>
+                        <p class="mt-4 text-sm text-gray-600 leading-relaxed pl-2 border-l-2 border-brand-lime">
+                            Sí, cubrimos el área metropolitana de Monterrey (San Pedro, San Nicolás, Guadalupe, etc.).
+                            Costo según zona.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CUESTIONARIO (Fusionado: Estilo A, Campos B) -->
+        <section id="cuestionario" class="py-24 bg-brand-light">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="bg-brand-dark rounded-[3rem] p-8 md:p-16 text-white shadow-2xl relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-96 h-96 bg-brand-lime opacity-10 blur-[120px] rounded-full point-events-none">
+                    </div>
+
+                    <div class="relative z-10 grid lg:grid-cols-2 gap-12">
+                        <div data-aos="fade-right">
+                            <h2 class="text-3xl md:text-4xl font-black mb-6">Empecemos tu Proyecto</h2>
+                            <p class="text-gray-400 mb-8 leading-relaxed">
+                                Llena el formulario para generar tu mensaje. Se abrirá WhatsApp web o app directamente
+                                con tu solicitud lista para enviar.
+                            </p>
+
+                            <div class="hidden lg:block space-y-4">
+                                <div class="flex items-center gap-4 text-sm text-gray-300">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-brand-lime">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    cotizaciones@regioprintgo.com
+                                </div>
+                                <div class="flex items-center gap-4 text-sm text-gray-300">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-brand-lime">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    +52 81 1534 3073
+                                </div>
+                            </div>
+                        </div>
+
+                        <form id="form-cotizar"
+                            class="space-y-5 bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-sm"
+                            data-aos="fade-left">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-brand-lime mb-2">¿A
+                                    quién nos dirigimos? *</label>
+                                <input id="f-nombre" type="text" required
+                                    class="w-full bg-brand-dark/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-brand-lime focus:outline-none focus:ring-1 focus:ring-brand-lime transition"
+                                    placeholder="Nombre Apellido">
+                            </div>
+
+                            <div class="grid grid-cols-1 gap-4">
+                                <div>
+                                    <label
+                                        class="block text-xs font-bold uppercase tracking-wider text-brand-lime mb-2">Empresa
+                                        / Giro (Opcional)</label>
+                                    <input id="f-empresa" type="text"
+                                        class="w-full bg-brand-dark/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-brand-lime focus:outline-none focus:ring-1 focus:ring-brand-lime transition"
+                                        placeholder="Ej: Consultorio, Despacho...">
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-bold uppercase tracking-wider text-brand-lime mb-2">WhatsApp
+                                        de Contacto *</label>
+                                    <input id="f-telefono" type="tel" required
+                                        class="w-full bg-brand-dark/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-brand-lime focus:outline-none focus:ring-1 focus:ring-brand-lime transition"
+                                        placeholder="81...">
+                                </div>
+                            </div>
+
+                            <p class="text-xs text-gray-400 italic">
+                                * Los detalles los definimos directamente por WhatsApp.
+                            </p>
+
+                            <button type="submit"
+                                class="w-full py-4 bg-brand-lime text-brand-dark font-black text-lg rounded-xl hover:shadow-glow hover:scale-[1.02] transition flex items-center justify-center gap-2">
+                                Iniciar Cotización <i class="fab fa-whatsapp"></i>
+                            </button>
+                            <p class="text-center text-xs text-gray-500 mt-4 flex items-center justify-center gap-2">
+                                <i class="fas fa-lock opacity-70"></i> Tus datos están protegidos. Respuesta rápida.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ATENCIÓN ONLINE -->
+    <section class="py-20 bg-white border-t border-gray-100" data-aos="fade-up">
+        <div class="container mx-auto px-6 text-center">
+            <div
+                class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-light text-brand-lime text-3xl mb-6">
+                <i class="fas fa-headset"></i>
+            </div>
+
+            <h2 class="text-3xl font-black text-brand-dark mb-4">Atención 100% en Línea</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Todo el proceso se maneja en línea: cotización, revisión de archivos, producción y entrega. Te atendemos
+                por WhatsApp y entregamos en Monterrey y área metropolitana.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
+                <div class="p-4 rounded-2xl hover:bg-brand-light transition duration-300">
+                    <i class="fas fa-clock text-brand-blue text-2xl mb-3"></i>
+                    <h3 class="font-bold text-brand-dark mb-1">Sin traslados</h3>
+                    <p class="text-xs text-gray-500">Olvídate del tráfico y las filas. Todo desde tu celular.</p>
+                </div>
+                <div class="p-4 rounded-2xl hover:bg-brand-light transition duration-300">
+                    <i class="fas fa-file-contract text-brand-blue text-2xl mb-3"></i>
+                    <h3 class="font-bold text-brand-dark mb-1">Revisión Digital</h3>
+                    <p class="text-xs text-gray-500">Aprueba tus archivos antes de producción.</p>
+                </div>
+                <div class="p-4 rounded-2xl hover:bg-brand-light transition duration-300">
+                    <i class="fas fa-truck text-brand-blue text-2xl mb-3"></i>
+                    <h3 class="font-bold text-brand-dark mb-1">Entrega Local</h3>
+                    <p class="text-xs text-gray-500">Cobertura en todo Monterrey y Área Metropolitana.</p>
+                </div>
+            </div>
+
+            <a href="https://wa.me/528115343073" target="_blank"
+                class="inline-flex items-center gap-2 px-8 py-3 bg-brand-lime text-brand-dark font-black rounded-full hover:shadow-glow transition transform hover:-translate-y-1">
+                Cotizar por WhatsApp <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark py-12 border-t border-white/5 text-sm">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <p class="text-white font-black text-2xl mb-1">REGIO PRINT <span class="text-brand-lime">GO</span>
+                    </p>
+                    <p class="text-gray-500">Dando servicio a negocios y profesionales en Nuevo León.</p>
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i
+                            class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i
+                            class="fab fa-instagram text-xl"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-white/5 text-center text-gray-600 text-xs">
+                © <span id="year"></span> Regio Print Go. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        // Año dinámico
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // AOS Init
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+
+        // Glightbox Init
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+
+        const navbar = document.getElementById('navbar');
+        const navLogo = document.getElementById('nav-logo');
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu-btn');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY > 50;
+            if (scrolled) {
+                navbar.classList.remove('header-transparent');
+                navbar.classList.add('header-scrolled');
+                navLogo.classList.remove('text-white');
+                navLogo.classList.add('text-brand-dark');
+                mobileBtn.classList.remove('text-white');
+                mobileBtn.classList.add('text-brand-dark');
+                navLinks.forEach(a => {
+                    a.classList.remove('text-gray-300');
+                    a.classList.add('text-gray-600');
+                });
+            } else {
+                navbar.classList.add('header-transparent');
+                navbar.classList.remove('header-scrolled');
+                navLogo.classList.add('text-white');
+                navLogo.classList.remove('text-brand-dark');
+                mobileBtn.classList.add('text-white');
+                mobileBtn.classList.remove('text-brand-dark');
+                navLinks.forEach(a => {
+                    a.classList.add('text-gray-300');
+                    a.classList.remove('text-gray-600');
+                });
+            }
+        });
+
+        // Menú móvil
+        function openMenu() { mobileMenu.classList.remove('translate-x-full'); }
+        function closeMenuFn() { mobileMenu.classList.add('translate-x-full'); }
+
+        mobileBtn.addEventListener('click', openMenu);
+        closeMenu.addEventListener('click', closeMenuFn);
+        document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeMenuFn));
+
+        // Formulario -> WhatsApp API
+        const form = document.getElementById('form-cotizar');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const nombre = document.getElementById('f-nombre').value.trim();
+            const empresa = (document.getElementById('f-empresa').value || '').trim();
+            const telefono = document.getElementById('f-telefono').value.trim();
+
+            const msg =
+                `Hola *Regio Print Go*, quiero iniciar una cotización:
+            
+👤 *Nombre:* ${nombre}
+🏢 *Empresa:* ${empresa || 'N/A'}
+📱 *Teléfono:* ${telefono}
+
+Me gustaría que me contactaran para definir detalles.`;
+
+            const url = `https://wa.me/528115343073?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+            form.reset();
+        });
+
+        // Sticky CTA Logic
+        const stickyCTA = document.getElementById('mobile-sticky-cta');
+        const footer = document.querySelector('footer');
+
+        if (stickyCTA && footer) {
+            window.addEventListener('scroll', () => {
+                const footerRect = footer.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+
+                // Si el footer entra en pantalla, ocultar la barra
+                if (footerRect.top <= windowHeight) {
+                    stickyCTA.style.transform = 'translateY(100%)';
+                } else {
+                    stickyCTA.style.transform = 'translateY(0)';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
